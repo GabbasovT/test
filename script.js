@@ -10,7 +10,7 @@ async function checkPassword() {
     const passwordInput = document.getElementById("password").value;
     const hash = await sha256(passwordInput);
 
-    if (hash === correctPasswordHash) {
+    if (passwordInput === "balavnevaAS") {
         localStorage.setItem("authenticated", "true");
         window.location.href = "gallery.html";
     } else {
