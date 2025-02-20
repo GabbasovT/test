@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="verifyAccess()">
+    <div class="gallery-container">
+        <h1>Галерея</h1>
+        <div class="gallery">
+            <div class="image-card">
+                <img src="images/photo1.jpg" alt="Фото 1">
+                <p>Описание фото 1</p>
+            </div>
+            <div class="image-card">
+                <img src="images/photo2.jpg" alt="Фото 2">
+                <p>Описание фото 2</p>
+            </div>
+            <div class="image-card">
+                <img src="images/photo3.png" alt="Фото 3">
+                <p>Описание фото 3</p>
+            </div>
+        </div>
+        <button onclick="logout()">Выйти</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
