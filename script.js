@@ -1,4 +1,4 @@
-const correctPasswordHash = "timur";
+const correctPasswordHash = "5e884898da28047151d0e56f8dc6292773603d0d6aabbddc2f6f94e774b7b53";
 
 async function sha256(message) {
     const msgBuffer = new TextEncoder().encode(message);
@@ -8,9 +8,9 @@ async function sha256(message) {
 
 async function checkPassword() {
     const passwordInput = document.getElementById("password").value;
-    //const hash = await sha256(passwordInput);
+    const hash = await sha256(passwordInput);
 
-    if (passwordInput === correctPasswordHash) {
+    if (hash === correctPasswordHash) {
         localStorage.setItem("authenticated", "true");
         window.location.href = "gallery.html";
     } else {
