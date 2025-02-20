@@ -1,4 +1,4 @@
-const correctPasswordHash = "5e884898da28047151d0e56f8dc6292773603d0d6aabbddc2f6f94e774b7b53";
+const correctPasswordHash = "timur";
 
 async function sha256(message) {
     const msgBuffer = new TextEncoder().encode(message);
