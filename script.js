@@ -10,7 +10,7 @@ async function checkPassword() {
     const passwordInput = document.getElementById("password").value;
     const hash = await sha256(passwordInput);
 
-    if (passwordInput === "balavnevaAS") {
+    if (passwordInput === TIMUR) {
         localStorage.setItem("authenticated", "true");
         window.location.href = "gallery.html";
     } else {
@@ -28,3 +28,5 @@ function logout() {
     localStorage.removeItem("authenticated");
     window.location.href = "index.html";
 }
+
+const TIMUR = "rnimyau";
